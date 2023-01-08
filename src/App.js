@@ -1,10 +1,13 @@
+import React from 'react';
 import './App.css';
+import Logo from './Logo';
+import LearnReactLink from './LearnReactLink';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
+      <Logo src="Octocat.png" className="App-logo" alt="logo" />
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React
         </p>
@@ -12,14 +15,14 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <a
+          <LearnReactLink
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
             Learn React
-          </a>
+          </LearnReactLink>
         </p>
       </header>
     </div>
