@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Logo from './Logo';
 import LearnReactLink from './LearnReactLink';
 
 function App() {
+  const[count, setCount] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
@@ -24,6 +25,8 @@ function App() {
             Learn React
           </LearnReactLink>
         </p>
+        <p>You clicked the button {count} times</p>
+        <button onClick={()=> setCount(count+1)}>click me</button>
       </header>
     </div>
   );
