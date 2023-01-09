@@ -4,11 +4,13 @@ import Logo from './Logo';
 import LearnReactLink from './LearnReactLink';
 import Counter from './Counter';
 import EmailForm from './EmailForm';
+import NavBar from './Navigation';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <NavBar />
         <Logo src="Octocat.png" className="App-logo" alt="logo" />
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React

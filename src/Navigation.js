@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Navigation() {
+const NavBar = () => {
   return (
-    <div className="nav-container">
-      <nav>
-        <a href="#">Docs</a>
-        <a href="#">Tutorial</a>
-        <a href="#">Blog</a>
-        <a href="#">Community</a>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Tutorial</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </nav>
   );
-}
+};
 
-export default Navigation;
+export default NavBar;
